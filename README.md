@@ -9,11 +9,16 @@ You can get the similarity between two images using this algorithm.
 com.tommy.main.Main
 
 public class Main {
+
 	public static void main(String[] args) {
-		System.out.println("hello");
+		
 		Phash phash = new Phash();
+		
 		CImage imA=new CImage("D:\\cars\\temp\\3.jpg");// replace this with your own image path
+		
 		CImage imB=new CImage("D:\\cars\\temp\\4.jpg");// 替换成你自己的图片路径
+		
 		phash._ph_compare_images(imA, imB);
 	}
+	
 }
